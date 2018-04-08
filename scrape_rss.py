@@ -11,7 +11,7 @@ urls = {
     "rss": []
 }
 
-d = pq(etree.fromstring(sys.stdin.read()))
+d = pq(sys.stdin.read(), parser='html')
 
 for a in d('a,link'):
     tmp = a.attrib['href']
