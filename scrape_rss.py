@@ -37,7 +37,6 @@ for a in d('a,link'):
 
 for link in urls_tmp:
     ct = get_content_type(link)
-    print ("ct url", ct, link)
     if ct == "application/rss+xml":
         urls["rss"].append(link)
     elif ct == "application/atom+xml":
