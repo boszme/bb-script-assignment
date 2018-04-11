@@ -24,7 +24,7 @@ def get_content_type(url):
         else:
             content_type = content_header
     except:
-        content_type = "ERROR"
+        content_type = "NETWORK ERROR"
     return content_type
 
 
